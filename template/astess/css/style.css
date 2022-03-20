@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+:root{
+  --textColor:#212529;
+  --bgColor:#0000004d;
+  --textColorTow:#efba6c;
+}
+body{
+  background-color: rgb(138, 138, 138);
+}
+
+/* ======================start navber =================  */
+.navbar{
+  background-color: #fff;
+}
+.navbar .navbar-brand img{
+  max-width:75%;
+}
+.navbar .nav-item .nav-link{
+  padding: 20px 15px;
+  color:var(--textColor);
+}
+.navbar .nav-item.active .nav-link{
+  color:var(--textColorTow);
+}
+.navbar #btnClose{
+  display: none;
+}
+
+@media (max-width:991px) {
+  .navbar #btnClose{
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    color: #333;
+    font-size: 22px;
+  }
+  .navbar .navbar-collapse{
+    position: fixed;
+    background: #fff;
+    top: 0;
+    width: 50vw;
+    height: 100vh !important;
+  }
+  .navbar .navbar-collapse .navbar-nav{
+    margin-top: 50px;
+  }
+}
+/* ======================end navber =================  */
+
+
+
+/* =============start header ================= */
+header{
+  background-image: url("../img/bgHeader.webp");
+  background-size: cover;
+  background-position: center center;
+  height: calc( 100vh - 93px);
+}
+header .container , header .row{
+  height: 100%;
+}
+header .row{
+  align-items: center;
+}
+/* =============end header ================= */
+
+
+
